@@ -239,6 +239,9 @@ void usuwanie()
 
         if (Modele[marka - 1].empty() == true)
         {
+            Modele.erase(Modele.begin() + marka - 1);
+            Ceny.erase(Ceny.begin() + marka - 1);
+            Ilosc.erase(Ilosc.begin() + marka - 1);
             oferta.erase(oferta.begin() + marka - 1);
         }
     }
@@ -247,8 +250,5 @@ void usuwanie()
         Ilosc[marka - 1][model - 1]--;
     }
     cout << "Usunieto!" << endl;
-    offer_save();
-    model_save();
-    amount_save();
-    price_save();
+
 }

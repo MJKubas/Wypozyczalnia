@@ -174,6 +174,10 @@ int main()
                     {
                         potwierdzenie = 0;
                     }
+                    offer_save();
+                    model_save();
+                    amount_save();
+                    price_save();
                     break;
                 }
 
